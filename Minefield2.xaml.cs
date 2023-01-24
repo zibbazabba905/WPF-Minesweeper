@@ -51,7 +51,7 @@ namespace Sweeper04
         }
         private static void OnBombCountChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
-            //(d as Minefield2).SetField();
+            //(d as Minefield2).SetField(); //set on slider release
         }
 
 
