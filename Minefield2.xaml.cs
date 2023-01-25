@@ -56,7 +56,6 @@ namespace Sweeper04
 
 
 
-        public static ZCell[,] CellArray { get; set; }
 
 
         public int BombCount
@@ -68,9 +67,8 @@ namespace Sweeper04
             get { return BombCount - FlaggedCells.Count(); }
         }
 
-
+        public static ZCell[,] CellArray { get; set; }
         public static ObservableCollection<Button> CellButtons { get; } = new ObservableCollection<Button>();
-
         public static List<ZCell> RemainingCells { get; set; } = new List<ZCell>();
         public static List<ZCell> MinedCells { get; set; } = new List<ZCell>();
         public static List<ZCell> FlaggedCells { get; set; } = new List<ZCell>();
